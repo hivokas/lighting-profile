@@ -8,9 +8,12 @@
                     </router-link>
 
                     <span v-for="attachedFlatType in attachedFlatTypes">
-						<router-link :to="{name: 'dashboard.attachedFlatTypes.show', params: {flatTypeId: attachedFlatType.id}}" class="nav-link" activeClass="active" exact>
-							{{ attachedFlatType.name }}
-						</router-link>
+                        <div class="nav-link">
+                            {{ attachedFlatType.name }}
+                        </div>
+<!--						<router-link :to="{name: 'dashboard.attachedFlatTypes.show', params: {flatTypeId: attachedFlatType.id}}" class="nav-link" activeClass="active" exact>-->
+<!--							{{ attachedFlatType.name }}-->
+<!--						</router-link>-->
 					</span>
 				</nav>
 			</div>
